@@ -8,6 +8,8 @@ Tiny Neovim plugin that leaves a short-lived breadcrumb trail behind your cursor
 - Uses extmarks + virtual text
 - Automatic cleanup per buffer
 
+![breadcrumbs.nvim demo](assets/breadcrumbs-demo.gif)
+
 ## Installation
 
 Using lazy.nvim:
@@ -29,4 +31,3 @@ The breadcrumb trail makes it obvious where I just was and keeps my focus intact
 ## TODO
 - Configurable colors and fade time
 - Toggle command or keymap
-- Screenshot/demo GIF
