@@ -1,5 +1,32 @@
-# Breadcrumbs.nvim
+# breadcrumbs.nvim
 
-Problem: With ADHD, losing track of the cursor is like walking through a doorway and forgetting what I was doing in the first place.
+Tiny Neovim plugin that leaves a short-lived breadcrumb trail behind your cursor using virtual text. Helpful if you frequently "lose" your cursor while editing.
 
-Solution: Most helpful to me (and almost completely eliminating my problem with this) is this plugin that leaves a "breadcrumb trail" of where my cursor's been.
+## Features
+
+- Fading trail of colored blocks where your cursor just was
+- Uses extmarks + virtual text
+- Automatic cleanup per buffer
+
+## Installation
+
+Using lazy.nvim:
+
+```lua
+{
+  "yourname/breadcrumbs.nvim",
+  config = function()
+    require("beaus_plugins.breadcrumb_trail").setup()
+  end,
+}
+```
+
+## Why
+
+With ADHD, I often lose my cursor context when I move around a file.
+The breadcrumb trail makes it obvious where I just was and keeps my focus intact.
+
+## TODO
+- Configurable colors and fade time
+- Toggle command or keymap
+- Screenshot/demo GIF
