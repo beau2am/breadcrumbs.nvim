@@ -16,7 +16,7 @@ Using lazy.nvim:
 
 ```lua
 {
-  "yourname/breadcrumbs.nvim",
+  "beau2am/breadcrumbs.nvim",
   config = function()
     require("beaus_plugins.breadcrumb_trail").setup()
   end,
